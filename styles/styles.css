@@ -1,0 +1,128 @@
+.main {
+    max-width: 2000px;
+    margin: auto;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    font-size: 100px;
+    flex: 100%;
+    text-align: center;
+}
+
+.footer {
+    flex: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+
+.contentContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.containerWhite {
+    flex: 2;
+    border-style:solid ;
+    border-width: 4px 4px ;
+    border-color: lightgray;
+}
+
+.containerBlue {
+    display:flex;
+    flex-direction: column;
+    background-color: #b7c4dc;
+    flex: 1;
+    border-style: solid;
+    border-width: 1px 1px;
+    border-color: black;
+}
+
+.containerLittleBlue {
+    display: block;
+}
+
+.containerImages {
+    flex: 1;
+    min-height: 200px;
+}
+
+.containerText {
+    flex: 1;
+}
+
+.titrePrimaire {
+    color: black;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titreSecondaire {
+    color: grey;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.images {
+   height: 200px;
+    margin: 15px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.textPrimaire {
+    font-size: 28px;
+    text-align: justify;
+}
+
+.textSecondaire {
+    font-size: 25px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .images {
+        flex:1;
+        height: auto;
+        margin: 5px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: top;
+        align-self: right;
+        height: 70%;
+    }
+
+    .containerLittleBlue {
+        display: flex;
+       
+    }
+    .containerImages {
+        order:2;
+    }
+    
+    .containerText {
+        order:1;
+        flex:1;
+    }
+
+}
